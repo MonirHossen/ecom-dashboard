@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Header from "./Header";
 
 function UpdateProduct() {
-    return (
-        <h1>Update Product Page</h1>
-    )
+  return (
+    <div>
+      <Header />
+      <h1>Update Product Page</h1>
+    </div>
+  );
 }
 
-export default UpdateProduct
+export default UpdateProduct;
