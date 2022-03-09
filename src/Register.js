@@ -8,11 +8,10 @@ function Register() {
   const history = useHistory();
 
   useEffect(() => {
-      if (localStorage.getItem('user-info')) {
-          history.push("./add");
-      }
-  })
-
+    if (localStorage.getItem("user-info")) {
+      history.push("./add");
+    }
+  });
 
   async function singUP() {
     let item = { name, email, password };
