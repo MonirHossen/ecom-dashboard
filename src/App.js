@@ -19,12 +19,14 @@ function App() {
         <Route path="/register">
             <Register/>
         </Route>
+
         <Route path="/add">
             <Protected Cmp={AddProduct} />
         </Route>
         <Route path="/update">
             <Protected Cmp={UpdateProduct} />
         </Route>
+        
       </BrowserRouter>
     </div>
   );

@@ -1,19 +1,19 @@
-// import React,{useEffect} from "react";
-// import Header from './Header';
-// import {useHistory} from 'react-router-dom'
-function Login() {
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
+function Login(props) {
+  let Cmp = props.Cmp;
 
-    // const history = useHistory();
+  const history = useHistory();
 
-    // useEffect(() => {
-    //     if (localStorage.getItem('user-info')) {
-    //         history.push("./add");
-    //     }
-    // })
-    
+  useEffect(() => {
+    if (!localStorage.getItem("user-info")) {
+      history.push("./register");
+    }
+  });
+
   return (
     <div>
-     
+      <Cmp />
     </div>
   );
 }
